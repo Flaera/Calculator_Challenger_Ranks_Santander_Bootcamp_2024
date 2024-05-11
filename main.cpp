@@ -31,12 +31,23 @@ int checkRank(int wins, int win_rate){
 
 int main(int argc, char* argv[]){
     int wins, loss, win_rate;
-    std::cout<<"Digite o numero de vitorias:\n";
-    std::cin>>wins;
-    std::cout<<"Digite o numero de derrotas:\n";
-    std::cin>>loss;
-    win_rate = winLoss(wins,loss);
-    checkRank(wins,win_rate);
+    bool next = true;
+
+    while (next==true){
+        std::cout<<"Digite o numero de vitorias:\n";
+        std::cin>>wins;
+        std::cout<<"Digite o numero de derrotas:\n";
+        std::cin>>loss;
+        win_rate = winLoss(wins,loss);
+        checkRank(wins,win_rate);
+
+        char opt;
+        std::cout<<"Quer avaliar outro jogador? (s/n)\n";
+        std::cin>>opt;
+        if (opt=='s'){
+            next=true;
+        }else{next=false;}
+    }
 
     return 0;
 }
