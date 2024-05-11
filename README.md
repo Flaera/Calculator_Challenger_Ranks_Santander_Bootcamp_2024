@@ -2,7 +2,7 @@
 Repositório criado para armazenar códigos do desafio da Calculadora de Partidas Rankeadas do Santander Bootcamp 2024 que foi postado como desafio na plataforma Dio.
 
 ## Como executar o projeto
-asdsadas
+Execute o makefile no terminal aberto na pasta do projeto com o comando "**make**".
 
 ##
 
